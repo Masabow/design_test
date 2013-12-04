@@ -19,6 +19,8 @@
 		C5FD22011840AD5E00D4AA5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FD21E91840AD5E00D4AA5B /* UIKit.framework */; };
 		C5FD22091840AD5E00D4AA5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5FD22071840AD5E00D4AA5B /* InfoPlist.strings */; };
 		C5FD220B1840AD5E00D4AA5B /* design_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FD220A1840AD5E00D4AA5B /* design_testTests.m */; };
+		C5FD22151840AD8F00D4AA5B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FD22141840AD8F00D4AA5B /* Storyboard.storyboard */; };
+		C5FD22181840AEC600D4AA5B /* TestKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FD22171840AEC600D4AA5B /* TestKeyboardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		C5FD22061840AD5E00D4AA5B /* design_testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "design_testTests-Info.plist"; sourceTree = "<group>"; };
 		C5FD22081840AD5E00D4AA5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5FD220A1840AD5E00D4AA5B /* design_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = design_testTests.m; sourceTree = "<group>"; };
+		C5FD22141840AD8F00D4AA5B /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C5FD22161840AEC600D4AA5B /* TestKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKeyboardView.h; sourceTree = "<group>"; };
+		C5FD22171840AEC600D4AA5B /* TestKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKeyboardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				C5FD21F51840AD5E00D4AA5B /* AppDelegate.m */,
 				C5FD21F71840AD5E00D4AA5B /* Images.xcassets */,
 				C5FD21EC1840AD5E00D4AA5B /* Supporting Files */,
+				C5FD22141840AD8F00D4AA5B /* Storyboard.storyboard */,
+				C5FD22161840AEC600D4AA5B /* TestKeyboardView.h */,
+				C5FD22171840AEC600D4AA5B /* TestKeyboardView.m */,
 			);
 			path = design_test;
 			sourceTree = "<group>";
@@ -191,6 +199,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = masaya;
 				TargetAttributes = {
+					C5FD21E11840AD5E00D4AA5B = {
+						DevelopmentTeam = 2BMX69D8KP;
+					};
 					C5FD21FC1840AD5E00D4AA5B = {
 						TestTargetID = C5FD21E11840AD5E00D4AA5B;
 					};
@@ -221,6 +232,7 @@
 			files = (
 				C5FD21F01840AD5E00D4AA5B /* InfoPlist.strings in Resources */,
 				C5FD21F81840AD5E00D4AA5B /* Images.xcassets in Resources */,
+				C5FD22151840AD8F00D4AA5B /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5FD21F61840AD5E00D4AA5B /* AppDelegate.m in Sources */,
+				C5FD22181840AEC600D4AA5B /* TestKeyboardView.m in Sources */,
 				C5FD21F21840AD5E00D4AA5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "design_test/design_test-Prefix.pch";
 				INFOPLIST_FILE = "design_test/design_test-Info.plist";
@@ -374,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "design_test/design_test-Prefix.pch";
 				INFOPLIST_FILE = "design_test/design_test-Info.plist";
@@ -443,6 +458,7 @@
 				C5FD22101840AD5E00D4AA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5FD22111840AD5E00D4AA5B /* Build configuration list for PBXNativeTarget "design_testTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +467,7 @@
 				C5FD22131840AD5E00D4AA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
