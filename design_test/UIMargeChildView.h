@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 enum
 {
-    MARGE_VIEW_TOP = 0,
+    MARGE_VIEW_BOTTOM = 0,
     MARGE_VIEW_LEFT,
 };
 
