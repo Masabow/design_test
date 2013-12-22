@@ -36,6 +36,9 @@
     [textView becomeFirstResponder];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(KeyboardWasShown:)name:UIKeyboardDidShowNotification object:nil];
+    
+    [_labelTest sizeToFit];
+    [_viewMarge doMarge:0];
 }
 
 -(void)KeyboardWasShown:(NSNotification*)note
