@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5E087ED1866E59D000135B0 /* JTCCustomizableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E087E61866E59D000135B0 /* JTCCustomizableTableView.m */; };
+		C5E087EE1866E59D000135B0 /* JTCCustomizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E087E81866E59D000135B0 /* JTCCustomizableView.m */; };
+		C5E087EF1866E59D000135B0 /* JTCLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E087EA1866E59D000135B0 /* JTCLineView.m */; };
+		C5E087F01866E59D000135B0 /* VerticallyAlignedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E087EC1866E59D000135B0 /* VerticallyAlignedLabel.m */; };
 		C5E31A41186674B9003EA504 /* UIMargeChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E31A40186674B9003EA504 /* UIMargeChildView.m */; };
+		C5E99D3218685BED004273B5 /* UIAutoSizeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E99D3118685BED004273B5 /* UIAutoSizeLabel.m */; };
 		C5FD21E61840AD5E00D4AA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FD21E51840AD5E00D4AA5B /* Foundation.framework */; };
 		C5FD21E81840AD5E00D4AA5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FD21E71840AD5E00D4AA5B /* CoreGraphics.framework */; };
 		C5FD21EA1840AD5E00D4AA5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FD21E91840AD5E00D4AA5B /* UIKit.framework */; };
@@ -35,8 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5E087E51866E59D000135B0 /* JTCCustomizableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCCustomizableTableView.h; sourceTree = "<group>"; };
+		C5E087E61866E59D000135B0 /* JTCCustomizableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCCustomizableTableView.m; sourceTree = "<group>"; };
+		C5E087E71866E59D000135B0 /* JTCCustomizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCCustomizableView.h; sourceTree = "<group>"; };
+		C5E087E81866E59D000135B0 /* JTCCustomizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCCustomizableView.m; sourceTree = "<group>"; };
+		C5E087E91866E59D000135B0 /* JTCLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCLineView.h; sourceTree = "<group>"; };
+		C5E087EA1866E59D000135B0 /* JTCLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCLineView.m; sourceTree = "<group>"; };
+		C5E087EB1866E59D000135B0 /* VerticallyAlignedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticallyAlignedLabel.h; sourceTree = "<group>"; };
+		C5E087EC1866E59D000135B0 /* VerticallyAlignedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticallyAlignedLabel.m; sourceTree = "<group>"; };
 		C5E31A3F186674B9003EA504 /* UIMargeChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMargeChildView.h; sourceTree = "<group>"; };
 		C5E31A40186674B9003EA504 /* UIMargeChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMargeChildView.m; sourceTree = "<group>"; };
+		C5E99D3018685BED004273B5 /* UIAutoSizeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAutoSizeLabel.h; sourceTree = "<group>"; };
+		C5E99D3118685BED004273B5 /* UIAutoSizeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAutoSizeLabel.m; sourceTree = "<group>"; };
 		C5FD21E21840AD5E00D4AA5B /* design_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = design_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FD21E51840AD5E00D4AA5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5FD21E71840AD5E00D4AA5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +97,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5E087E41866E59D000135B0 /* JTCCustomizableUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				C5E087E51866E59D000135B0 /* JTCCustomizableTableView.h */,
+				C5E087E61866E59D000135B0 /* JTCCustomizableTableView.m */,
+				C5E087E71866E59D000135B0 /* JTCCustomizableView.h */,
+				C5E087E81866E59D000135B0 /* JTCCustomizableView.m */,
+				C5E087E91866E59D000135B0 /* JTCLineView.h */,
+				C5E087EA1866E59D000135B0 /* JTCLineView.m */,
+				C5E087EB1866E59D000135B0 /* VerticallyAlignedLabel.h */,
+				C5E087EC1866E59D000135B0 /* VerticallyAlignedLabel.m */,
+			);
+			path = JTCCustomizableUIComponent;
+			sourceTree = "<group>";
+		};
+		C5E99D2F1868598D004273B5 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				C5E31A3F186674B9003EA504 /* UIMargeChildView.h */,
+				C5E31A40186674B9003EA504 /* UIMargeChildView.m */,
+				C5E99D3018685BED004273B5 /* UIAutoSizeLabel.h */,
+				C5E99D3118685BED004273B5 /* UIAutoSizeLabel.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		C5FD21D91840AD5E00D4AA5B = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +145,7 @@
 		C5FD21E41840AD5E00D4AA5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5E087E41866E59D000135B0 /* JTCCustomizableUIComponent */,
 				C5FD21E51840AD5E00D4AA5B /* Foundation.framework */,
 				C5FD21E71840AD5E00D4AA5B /* CoreGraphics.framework */,
 				C5FD21E91840AD5E00D4AA5B /* UIKit.framework */,
@@ -115,6 +157,7 @@
 		C5FD21EB1840AD5E00D4AA5B /* design_test */ = {
 			isa = PBXGroup;
 			children = (
+				C5E99D2F1868598D004273B5 /* CustomUI */,
 				C5FD21F41840AD5E00D4AA5B /* AppDelegate.h */,
 				C5FD21F51840AD5E00D4AA5B /* AppDelegate.m */,
 				C5FD21F71840AD5E00D4AA5B /* Images.xcassets */,
@@ -122,8 +165,6 @@
 				C5FD22141840AD8F00D4AA5B /* Storyboard.storyboard */,
 				C5FD22161840AEC600D4AA5B /* TestKeyboardView.h */,
 				C5FD22171840AEC600D4AA5B /* TestKeyboardView.m */,
-				C5E31A3F186674B9003EA504 /* UIMargeChildView.h */,
-				C5E31A40186674B9003EA504 /* UIMargeChildView.m */,
 			);
 			path = design_test;
 			sourceTree = "<group>";
@@ -256,10 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E087EF1866E59D000135B0 /* JTCLineView.m in Sources */,
 				C5FD21F61840AD5E00D4AA5B /* AppDelegate.m in Sources */,
+				C5E99D3218685BED004273B5 /* UIAutoSizeLabel.m in Sources */,
 				C5FD22181840AEC600D4AA5B /* TestKeyboardView.m in Sources */,
 				C5E31A41186674B9003EA504 /* UIMargeChildView.m in Sources */,
 				C5FD21F21840AD5E00D4AA5B /* main.m in Sources */,
+				C5E087EE1866E59D000135B0 /* JTCCustomizableView.m in Sources */,
+				C5E087F01866E59D000135B0 /* VerticallyAlignedLabel.m in Sources */,
+				C5E087ED1866E59D000135B0 /* JTCCustomizableTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

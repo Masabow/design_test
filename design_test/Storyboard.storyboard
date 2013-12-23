@@ -31,18 +31,53 @@
                                         </items>
                                     </toolbar>
                                     <view contentMode="scaleToFill" id="haD-vr-y7B" customClass="UIMargeChildView">
-                                        <rect key="frame" x="80" y="10" width="198" height="176"/>
+                                        <rect key="frame" x="0.0" y="10" width="198" height="176"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IfE-qT-PVg">
-                                                <rect key="frame" x="58" y="0.0" width="83" height="76"/>
+                                                <rect key="frame" x="58" y="0.0" width="83" height="95"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bf4-5B-2W7">
-                                                <rect key="frame" x="76" y="73" width="46" height="30"/>
+                                            <view contentMode="scaleToFill" id="gdv-D1-EJW" customClass="JTCCustomizableView">
+                                                <rect key="frame" x="20" y="96" width="80" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bf4-5B-2W7">
+                                                        <rect key="frame" x="17" y="25" width="46" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="40"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="GatherType" value="GATHER_BOTTOM"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="eWK-Is-01q" customClass="UIMargeChildView">
+                                        <rect key="frame" x="160" y="81" width="160" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cT8-fg-pZs" customClass="UIAutoSizeLabel">
+                                                <rect key="frame" x="59" y="64" width="92" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2a4-Aq-v3m">
+                                                <rect key="frame" x="5" y="59" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,6 +95,7 @@
                     <connections>
                         <outlet property="KeyboardUpTabBar" destination="tgo-os-eum" id="Wob-DT-giN"/>
                         <outlet property="KeyboardUpView" destination="kAE-tk-NFK" id="vgq-up-0m2"/>
+                        <outlet property="autoLabel" destination="cT8-fg-pZs" id="ThM-i2-Pxk"/>
                         <outlet property="labelTest" destination="IfE-qT-PVg" id="pWY-Ul-lds"/>
                         <outlet property="textView" destination="5FO-32-Vtv" id="DHh-uD-UIn"/>
                         <outlet property="viewMarge" destination="haD-vr-y7B" id="JzY-JB-201"/>
