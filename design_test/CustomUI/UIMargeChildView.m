@@ -21,6 +21,9 @@
     return self;
 }
 
+/**
+ 一番めのUIのサイズを監視する
+ */
 -(void)awakeFromNib
 {
     UIView *mainView = self.subviews[0];
@@ -28,6 +31,9 @@
     [mainView addObserver:self forKeyPath:@"frame" options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:nil];
 }
 
+/**
+ 一番目のUIのサイズが変更された
+ */
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     
@@ -48,10 +54,26 @@
     }
 }
 
+/**
+ 実際のマージ処理
+ */
 -(void)doMarge:(int)num type:(enum GATHER_TYPE)type
 {
     if(self.subviews.count<2)
         return;
+    
+    CGRect mainRect = self.frame;
+    
+    switch(type)
+    {
+        case GATHER_BOTTOM:
+            mainRect.size.height -= num;
+            break;
+        case GATHER_LEFT:
+            mainRect.size.width -= num;
+            break;
+    }
+    self.frame = mainRect;
     
     for(int i=1;i<self.subviews.count;i++){
         CGRect subRect;
